@@ -22,4 +22,4 @@ A example log that is supposed to match: "2023-04-28T07:33:21.108843Z        24 
 
 A example log that is not supposed to match: "2023-04-28T07:33:21.108843Z        24 Query     SELECT * FROM users where username='Paco' and password='Paco'"
 
-At this time, the decoder matchs log lines that have more than four simple quotes, that method is weak, and will be improved.
+At this time, the decoder matchs log lines that have more than four simple quotes, **PLEASE USE IT ONLY FOR TESTS**, this method is weak (and will be improved in the future), we are not responsible for any damage that may be caused.
