@@ -1,10 +1,11 @@
-<group name="mysql_log,">  
-  <rule id="50184" level="14">
-    <match>Query</match>
-    <description>SQL Injection attempt found in application logs</description>
-    <field name="Date">date</field>
-    <field name="Time">time</field>
-    <field name="Query">Query</field>
-    <options>no_full_log</options-->
-  </rule>
-</group>
+<rule id="50184" level="14">
+  <decoded_as>sqli</decoded_as>
+  <description>SQL Injection attempt found in application logs</description>
+  <options>no_full_log</options>
+  <group>sqli_attack,sqli</group>
+  <mitre>
+    <id>T1190</id>
+    <id>T1055</id>
+  </mitre>
+</rule>
+
