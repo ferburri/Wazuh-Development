@@ -7,7 +7,7 @@ The main objective of this repository consists of implementing custom decoders a
 ### Part 0: How log ingestion works in Wazuh
 The proccess that a log line follow to be an alert is:
 
-First, the Wazuh Agent Daemon sends a log line for example of MySQL to the  Wazuh Manager, and here, the log line follows three phasses:
+Firstly, the Wazuh Agent Daemon sends a log line for example of MySQL to the  Wazuh Manager, and here, the log line follows three phasses:
 
 We are going to use as example this MySQL log line: `2023-04-28T07:33:21.108843Z        24 Query     SELECT * FROM users where username='' or 4=4 -- ' and password='1234'`
 
