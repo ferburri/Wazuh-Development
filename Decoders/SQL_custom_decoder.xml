@@ -1,0 +1,5 @@
+<decoder name="sqli">
+  <prematch>Query</prematch>
+  <regex>'^(\d\d\d\d-\d\d-\d\d)'T'(\d\d:\d\d:\d\d).\d*Z'\s*\d*\s*'(Query\s*.*password)'</regex>
+  <order>date, time, query</order>
+</decoder>
